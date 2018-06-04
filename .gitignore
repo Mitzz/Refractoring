@@ -1,6 +1,6 @@
 .metadata
 .recommenders
 **/bin/
-**/.project/
-**/.classpath/
-**/settings/
+**/.project
+**/.classpath
+**/.settings/
