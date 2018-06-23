@@ -2,7 +2,7 @@ package org.mitz.removeAssignmentsToParameters;
 
 public class RemoveAssignmentsToParameters {
 
-	int discount(int inputVal, int quantity, int yearToDate) {
+	int discount(final int inputVal, final int quantity, final int yearToDate) {
 		int result = inputVal;
 		if (inputVal > 50)
 			result -= 2;
