@@ -2,6 +2,7 @@ package org.mitz.extractClass;
 
 public class TelephoneNumber {
 	private String _areaCode;
+	private String _number;
 
 	String getAreaCode() {
 		return _areaCode;
@@ -11,4 +12,11 @@ public class TelephoneNumber {
 		_areaCode = arg;
 	}
 
+	String getNumber() {
+		return _number;
+	}
+
+	void setNumber(String arg) {
+		_number = arg;
+	}
 }

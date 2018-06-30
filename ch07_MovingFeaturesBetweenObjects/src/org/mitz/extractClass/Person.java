@@ -2,7 +2,6 @@ package org.mitz.extractClass;
 
 public class Person {
 	private String _name;
-	private String _officeNumber;
 	private TelephoneNumber _officeTelephone = new TelephoneNumber();
 	
 	public String getName() {
@@ -10,7 +9,7 @@ public class Person {
 	}
 
 	public String getTelephoneNumber() {
-		return ("(" + _officeTelephone.getAreaCode() + ") " + _officeNumber);
+		return ("(" + _officeTelephone.getAreaCode() + ") " + _officeTelephone.getNumber());
 	}
 
 	String getOfficeAreaCode() {
@@ -22,10 +21,10 @@ public class Person {
 	}
 
 	String getOfficeNumber() {
-		return _officeNumber;
+		return _officeTelephone.getNumber();
 	}
 
 	void setOfficeNumber(String arg) {
-		_officeNumber = arg;
+		_officeTelephone.setNumber(arg);
 	}
 }
