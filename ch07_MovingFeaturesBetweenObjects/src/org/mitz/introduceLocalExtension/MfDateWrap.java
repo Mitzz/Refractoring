@@ -13,8 +13,12 @@ public class MfDateWrap {
 	public MfDateWrap(String arg) {
 		_original = new Date(arg);
 	}
-	
+
 	public Date nextDay() {
 		return new Date(_original.getYear(), _original.getMonth(), _original.getDate() + 1);
+	}
+
+	public int getYear() {
+		return _original.getYear();
 	}
 }
