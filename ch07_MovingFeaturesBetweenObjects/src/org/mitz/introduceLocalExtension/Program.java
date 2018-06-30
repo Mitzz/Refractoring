@@ -7,10 +7,6 @@ public class Program {
 	public static void main(String[] args) {
 
 		Date previousEnd = new Date();
-		Date newStart = nextDay(previousEnd);
-	}
-
-	private static Date nextDay(Date previousEnd) {
-		return new Date(previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
+		Date newStart = new MfDateSub(previousEnd).nextDay();
 	}
 }
