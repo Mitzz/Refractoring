@@ -7,11 +7,11 @@ public class Program {
 	public static void main(String[] args) {
 
 		Date previousEnd = new Date();
-		nextDay(previousEnd);
+		Date newStart = nextDay(previousEnd);
 	}
 
-	private static void nextDay(Date previousEnd) {
-		Date newStart = new Date(previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
+	private static Date nextDay(Date previousEnd) {
+		return new Date(previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
 	}
 
 	
