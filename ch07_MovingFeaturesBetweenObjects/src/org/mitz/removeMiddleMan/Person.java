@@ -7,7 +7,8 @@ public class Person {
 		_department = arg;
 	}
 	
-	public Person getManager() {
-		return _department.getManager();
+	public Department getDepartment() {
+		return _department;
 	}
+	
 }
