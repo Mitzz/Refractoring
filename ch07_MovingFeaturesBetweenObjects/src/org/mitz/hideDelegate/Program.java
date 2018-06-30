@@ -4,6 +4,6 @@ public class Program {
 
 	public static void main(String[] args) {
 		Person john = new Person();
-		Person manager = john.getDepartment().getManager();
+		Person manager = john.getManager();
 	}
 }
