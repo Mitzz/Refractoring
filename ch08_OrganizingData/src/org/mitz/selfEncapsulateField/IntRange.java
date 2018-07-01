@@ -5,15 +5,31 @@ public class IntRange {
 	private int _low, _high;
 
 	boolean includes(int arg) {
-		return arg >= _low && arg <= _high;
+		return arg >= getLow() && arg <= getHigh();
 	}
 
 	void grow(int factor) {
-		_high = _high * factor;
+		setHigh(getHigh() * factor);
 	}
 
 	IntRange(int low, int high) {
-		_low = low;
-		_high = high;
+		setLow(low);
+		setHigh(high);
+	}
+
+	int getLow() {
+		return _low;
+	}
+
+	int getHigh() {
+		return _high;
+	}
+
+	void setLow(int arg) {
+		_low = arg;
+	}
+
+	void setHigh(int arg) {
+		_high = arg;
 	}
 }
